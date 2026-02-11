@@ -1,0 +1,11 @@
+.logout-container{
+    max-width: 400px;
+    margin: 80px auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: white;
+}
