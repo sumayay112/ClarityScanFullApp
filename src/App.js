@@ -9,13 +9,13 @@ import './firebase';
 import Home from './components/Home';
 import SignUp from './components/SignUp';
 import LogIn from './components/LogIn';
-import TakePhoto from './components/TakePhoto';
+// TakePhoto Import was here - now removed!
 import Prediction from './components/Prediction';
 import SkinTone from './components/SkinTone';
 import Navbar from './components/Navbar';
 import EditProfile from './components/EditProfile';
 import LogOut from './components/LogOut';
-import Resources from './components/Resources'; // 1. Added this import
+import Resources from './components/Resources'; 
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
           <Route path="/" element={<Home />} />
           
           {/* Public Educational Page */}
-          <Route path="/resources" element={<Resources />} /> {/* 2. Added this route */}
+          <Route path="/resources" element={<Resources />} /> 
           
           {/* Authentication Routes */}
           <Route path="/signup" element={<SignUp />} />
@@ -36,7 +36,7 @@ function App() {
           <Route path="/log-out" element={<LogOut />} />
           
           {/* Core App Features */}
-          <Route path="/take-photo" element={<TakePhoto />} />
+          {/* TakePhoto Route was here - now removed! */}
           <Route path="/prediction" element={<Prediction />} />
           <Route path="/skin-tone" element={<SkinTone />} />
           
