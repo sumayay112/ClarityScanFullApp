@@ -35,7 +35,7 @@ except Exception as e:
     print(f"--- Model Load Error: {e} ---")
 
 # The specific classes your model was trained to recognize
-class_names = ['Acne', 'Eczema', 'Melanoma', 'Psoriasis', 'Ringworm', 'Vitiligo']
+class_names = ['AcanthosisNigricans', 'Acne', 'Allergic_Contact_Dermatitis', 'Psoriasis', 'Vitiligo',]
 
 # --- 3. Health Check Route ---
 # Render uses this to verify your server started correctly
