@@ -1,35 +1,85 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 15px 50px;
-    background-color: #1a3a3a; 
+    padding: 0 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
-  
-  .navbar-logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000; 
-  }
-  
-  .nav-links {
+    height: 100px;
+    background: #2c3e50; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.nav-links {
     display: flex; 
     list-style: none; 
+    align-items: center;
+    gap: 30px;
     margin: 0;
     padding: 0;
-    gap: 30px; 
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #3498db;
-  }
+    /* Change to white/light grey for contrast against blue */
+    color: #ffffff; 
+    font-size: 19px; 
+    font-weight: 600;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.nav-links a:hover {
+    color: #3498db; /* Keep your brand blue for the hover effect */
+    opacity: 1;
+}
+
+.user-display {
+    /* Change text to light grey */
+    color: #bdc3c7; 
+    font-size: 18px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    list-style: none;
+}
+
+.navbar-logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+    /* Optional: If your logo has a white background, 
+       this makes it look like a clean sticker */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+    transform: scale(1.05);
+}
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 17px; 
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.4);
+}

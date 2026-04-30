@@ -1,26 +1,65 @@
-body {
-    color: black;
-    background-color: #D9C4B0;
-}
-
-.SignUpContainer {
-    text-align: center;
+.login-page-beige {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 15px; 
-    max-width: 400px;
-    margin: 0 auto;
-    border-radius: 12px;
-    margin: 80px auto 0;
-  }
+    background-color: #f5f5dc;
+    width: 100%;
+}
 
-.SignUpContainer input[type="text"],
-.SignUpContainer input[type="email"],
-.SignUpContainer input[type="password"] {
-  padding: 12px;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 12px; 
-  border: 1px solid #ccc; 
+.login-content-area {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-card-light {
+    max-width: 480px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Footer Styling - Matches Home and LogIn */
+.home-footer {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f5f5dc;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.home-footer p {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin: 8px auto;
+    text-align: center;
+}
+
+.disclaimer-text {
+    max-width: 700px;
+    margin: 15px auto 0 !important;
+    line-height: 1.6;
+    display: block;
+}
+
+/* Form specifics */
+.name-row {
+    display: flex;
+    gap: 15px;
+}
+
+.terms-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+    text-align: left;
 }

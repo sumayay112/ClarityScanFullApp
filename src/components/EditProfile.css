@@ -1,37 +1,137 @@
-.editprofilecontainer{
+/* Container matching your Login beige background */
+.login-page-beige {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-
+    justify-content: center;
+    background-color: #f5f5dc; 
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
+/* White Card matching Login */
+.login-card-light {
+    max-width: 450px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
 
-.cancelbutton {
-    background-color: green;
+.blue-accent-bar {
+    width: 40px;
+    height: 4px;
+    background-color: #3498db;
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+}
+
+.login-card-light h1 {
+    color: #2c3e50;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.user-email-display {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+    border: 1px solid #eee;
+}
+
+/* Form Styles */
+.input-field {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+.input-field input, .input-field select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    background-color: #fff;
+}
+
+.input-field input:focus, .input-field select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Save Button */
+.login-btn-blue {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
     color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
 }
 
-.savebutton {
-    background-color: green;
-    color: white;
-
+.login-btn-blue:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
 }
 
-.buttons{
-    display: flex;
-    gap: 20px;
+.login-btn-blue:disabled {
+    background-color: #bdc3c7;
 }
 
-.editprofilecontainer {
-    max-width: 400px;
-    margin: 80px auto; 
+/* Footer & Delete Action */
+.profile-footer {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* space between elements */
-    text-align: center;
-    padding: 30px;
-    border-radius: 12px;
-    background-color: white;
-  }
-  
-  
+    gap: 15px;
+}
+
+.delete-link {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.delete-link:hover {
+    color: #c0392b;
+}
+
+.home-link {
+    color: #95a5a6 !important;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}

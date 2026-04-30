@@ -10,7 +10,7 @@ export default function SkinTone() {
 
   const handleNext = () => {
     if (selectedTone) {
-      navigate("/skin-type");
+      navigate("/prediction");
     } else {
       alert("Please select a skin tone before proceeding.");
     }
@@ -20,7 +20,6 @@ export default function SkinTone() {
     <div className="SkinTypeContainer">
       
       <div className="top-row">
-        {/* Grouping title and icon together stops them from splitting apart */}
         <div className="title-with-info">
           <h1>What is your Skin Tone?</h1>
           <span 

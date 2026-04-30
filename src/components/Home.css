@@ -1,69 +1,167 @@
-.hero {
-    padding: 100px 20px;
-    background-color: #f2ede4;
-    text-align: center;
+/* 1. Global Wrapper */
+.home-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-.logo-text {
-    font-size: 3.5rem;
-    color: black;
-    margin-bottom: 20px;
-    font-weight: 800;
+/* 2. Hero Section (Beige) */
+.hero-section {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5dc;
+  text-align: center;
+  padding: 0 20px;
 }
 
-.hero-tagline {
-    font-size: 1.25rem;
-    color: #666;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
+.hero-content h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+/* Hero Buttons */
+.main-btn {
+  padding: 14px 40px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.secondary-btn {
+  padding: 14px 40px;
+  background-color: transparent;
+  color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+/* 3. Research Impact Section (Deep Professional Blue) */
+.research-impact {
+  padding: 100px 20px;
+  
+  background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.impact-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tagline {
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.impact-header h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.impact-description {
+  color: #bdc3c7;
+  max-width: 600px;
+  margin: 0 auto 60px;
 }
 
 
-.cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: left;
 }
 
-.btn-primary {
-    background-color: #8FBC8B;
-    color: white;
-    padding: 15px 35px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+.impact-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
 }
 
-.btn-secondary {
-    background-color: #8FBC8B;
-    color: black;
-    padding: 15px 35px;
-    border: 2px solid #8FBC8B;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
+.impact-card h3 {
+  color: #3498db;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
 
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 255, 0.3);
+.impact-card p {
+  color: #ecf0f1;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-.secondheadercontainer{
-    align-items: center;
-    text-align: center;
-    margin-bottom: 200px;
+.indicator {
+  width: 40px;
+  height: 4px;
+  background-color: #7f8c8d;
+  margin-bottom: 20px;
+  border-radius: 2px;
 }
 
-.thirdheadercontainer{
-    align-items: center;
-    text-align: center;
-   background-color: #1a3a3a;
-   color: white;
-    border-radius: 20px;
+.indicator.active {
+  background-color: #3498db;
+}
+
+.solution-highlight {
+  border: 1px solid rgba(52, 152, 219, 0.4);
+  background: rgba(52, 152, 219, 0.05);
+}
+
+/* 5. Footer (Beige) */
+.home-footer {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #f5f5dc;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.home-footer p {
+  font-size: 13px;
+  color: #7f8c8d;
+  margin: 10px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.disclaimer-text {
+  max-width: 700px;
+  margin: 15px auto 0 !important;
+  line-height: 1.6;
+  display: block;
 }

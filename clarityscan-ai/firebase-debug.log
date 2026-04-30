@@ -1,0 +1,377 @@
+[debug] [2026-04-27T16:07:17.288Z] ----------------------------------------------------------------------
+[debug] [2026-04-27T16:07:17.291Z] Command:       /opt/homebrew/Cellar/node/25.6.0/bin/node /opt/homebrew/bin/firebase emulators:start --only functions
+[debug] [2026-04-27T16:07:17.291Z] CLI Version:   15.15.0
+[debug] [2026-04-27T16:07:17.291Z] Platform:      darwin
+[debug] [2026-04-27T16:07:17.291Z] Node Version:  v25.6.0
+[debug] [2026-04-27T16:07:17.291Z] Time:          Mon Apr 27 2026 17:07:17 GMT+0100 (British Summer Time)
+[debug] [2026-04-27T16:07:17.292Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-27T16:07:18.223Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-27T16:07:18.223Z] > authorizing via signed-in user (sumayayasin25@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2026-04-27T16:07:18.385Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-27T16:07:18.385Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-04-27T16:07:18.388Z] Write emulator hub locator at /var/folders/2s/7cyff0c56tj476ddjdwb5wz40000gn/T/hub-clarityscan-a6ccf.json
+[debug] [2026-04-27T16:07:18.528Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-27T16:07:18.528Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-27T16:07:18.528Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-27T16:07:18.529Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2026-04-27T16:07:18.550Z] defaultcredentials: writing to file /Users/sumayayasin/.config/firebase/sumayayasin25_gmail_com_application_default_credentials.json
+[debug] [2026-04-27T16:07:18.551Z] Setting GAC to /Users/sumayayasin/.config/firebase/sumayayasin25_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/sumayayasin/.config/firebase/sumayayasin25_gmail_com_application_default_credentials.json"}}
+[debug] [2026-04-27T16:07:18.552Z] Checked if tokens are valid: true, expires at: 1777308672768
+[debug] [2026-04-27T16:07:18.552Z] Checked if tokens are valid: true, expires at: 1777308672768
+[debug] [2026-04-27T16:07:18.552Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clarityscan-a6ccf/adminSdkConfig [none]
+[debug] [2026-04-27T16:07:19.092Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clarityscan-a6ccf/adminSdkConfig 200
+[debug] [2026-04-27T16:07:19.092Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clarityscan-a6ccf/adminSdkConfig {"projectId":"clarityscan-a6ccf","storageBucket":"clarityscan-a6ccf.firebasestorage.app"}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2026-04-27T16:07:19.105Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2026-04-27T16:07:19.261Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2026-04-27T16:07:19.262Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2026-04-27T16:07:19.414Z] Data is 3538469
+[debug] [2026-04-27T16:07:19.414Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T16:07:19.415Z] [unzip] Processing entry: client/
+[debug] [2026-04-27T16:07:19.415Z] [unzip] mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/
+[debug] [2026-04-27T16:07:19.415Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2026-04-27T16:07:19.415Z] [unzip] Processing entry: client/favicon-16x16.png
+[debug] [2026-04-27T16:07:19.415Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.415Z] [unzip] Writing file: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/favicon-16x16.png
+[debug] [2026-04-27T16:07:19.416Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2026-04-27T16:07:19.416Z] [unzip] Processing entry: client/safari-pinned-tab.svg
+[debug] [2026-04-27T16:07:19.416Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.416Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/safari-pinned-tab.svg
+[debug] [2026-04-27T16:07:19.418Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2026-04-27T16:07:19.418Z] [unzip] Processing entry: client/favicon.ico
+[debug] [2026-04-27T16:07:19.418Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.418Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/favicon.ico
+[debug] [2026-04-27T16:07:19.419Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2026-04-27T16:07:19.419Z] [unzip] Processing entry: client/index.html
+[debug] [2026-04-27T16:07:19.419Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.419Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/index.html
+[debug] [2026-04-27T16:07:19.420Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2026-04-27T16:07:19.420Z] [unzip] Processing entry: client/android-chrome-192x192.png
+[debug] [2026-04-27T16:07:19.420Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.420Z] [unzip] Writing file: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/android-chrome-192x192.png
+[debug] [2026-04-27T16:07:19.420Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2026-04-27T16:07:19.420Z] [unzip] Processing entry: client/apple-touch-icon.png
+[debug] [2026-04-27T16:07:19.420Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.420Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/apple-touch-icon.png
+[debug] [2026-04-27T16:07:19.420Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2026-04-27T16:07:19.420Z] [unzip] Processing entry: client/android-chrome-512x512.png
+[debug] [2026-04-27T16:07:19.420Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.420Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/android-chrome-512x512.png
+[debug] [2026-04-27T16:07:19.421Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2026-04-27T16:07:19.421Z] [unzip] Processing entry: client/manifest.json
+[debug] [2026-04-27T16:07:19.421Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.421Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/manifest.json
+[debug] [2026-04-27T16:07:19.421Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2026-04-27T16:07:19.421Z] [unzip] Processing entry: client/robots.txt
+[debug] [2026-04-27T16:07:19.421Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.421Z] [unzip] Writing file: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/robots.txt
+[debug] [2026-04-27T16:07:19.422Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2026-04-27T16:07:19.422Z] [unzip] Processing entry: client/mstile-150x150.png
+[debug] [2026-04-27T16:07:19.422Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.422Z] [unzip] Writing file: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/mstile-150x150.png
+[debug] [2026-04-27T16:07:19.422Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T16:07:19.422Z] [unzip] Processing entry: client/assets/
+[debug] [2026-04-27T16:07:19.422Z] [unzip] mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/
+[debug] [2026-04-27T16:07:19.422Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2026-04-27T16:07:19.422Z] [unzip] Processing entry: client/assets/index-BX-A56oj.js
+[debug] [2026-04-27T16:07:19.422Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2026-04-27T16:07:19.422Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-BX-A56oj.js
+[debug] [2026-04-27T16:07:19.428Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2026-04-27T16:07:19.428Z] [unzip] Processing entry: client/assets/index-CjB9C900.css
+[debug] [2026-04-27T16:07:19.428Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2026-04-27T16:07:19.428Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-CjB9C900.css
+[debug] [2026-04-27T16:07:19.429Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2026-04-27T16:07:19.429Z] [unzip] Processing entry: client/assets/index-BX-A56oj.js.map
+[debug] [2026-04-27T16:07:19.429Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2026-04-27T16:07:19.429Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-BX-A56oj.js.map
+[debug] [2026-04-27T16:07:19.455Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T16:07:19.455Z] [unzip] Processing entry: client/assets/extensions/
+[debug] [2026-04-27T16:07:19.455Z] [unzip] mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions/
+[debug] [2026-04-27T16:07:19.455Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2026-04-27T16:07:19.455Z] [unzip] Processing entry: client/assets/extensions/default-extension.png
+[debug] [2026-04-27T16:07:19.455Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions
+[debug] [2026-04-27T16:07:19.455Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions/default-extension.png
+[debug] [2026-04-27T16:07:19.457Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T16:07:19.457Z] [unzip] Processing entry: client/assets/img/
+[debug] [2026-04-27T16:07:19.457Z] [unzip] mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/img/
+[debug] [2026-04-27T16:07:19.457Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2026-04-27T16:07:19.457Z] [unzip] Processing entry: client/assets/img/database.png
+[debug] [2026-04-27T16:07:19.457Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/img
+[debug] [2026-04-27T16:07:19.457Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/img/database.png
+[debug] [2026-04-27T16:07:19.458Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T16:07:19.458Z] [unzip] Processing entry: client/assets/provider-icons/
+[debug] [2026-04-27T16:07:19.458Z] [unzip] mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/
+[debug] [2026-04-27T16:07:19.458Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2026-04-27T16:07:19.458Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_saml.svg
+[debug] [2026-04-27T16:07:19.459Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.459Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_saml.svg
+[debug] [2026-04-27T16:07:19.460Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2026-04-27T16:07:19.460Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_phone.svg
+[debug] [2026-04-27T16:07:19.460Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.460Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_phone.svg
+[debug] [2026-04-27T16:07:19.461Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2026-04-27T16:07:19.461Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2026-04-27T16:07:19.461Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.461Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2026-04-27T16:07:19.461Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2026-04-27T16:07:19.461Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2026-04-27T16:07:19.461Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.462Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2026-04-27T16:07:19.463Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2026-04-27T16:07:19.463Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_apple.svg
+[debug] [2026-04-27T16:07:19.463Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.464Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_apple.svg
+[debug] [2026-04-27T16:07:19.464Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2026-04-27T16:07:19.464Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_github.svg
+[debug] [2026-04-27T16:07:19.464Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.464Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_github.svg
+[debug] [2026-04-27T16:07:19.465Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2026-04-27T16:07:19.465Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2026-04-27T16:07:19.465Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.465Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2026-04-27T16:07:19.466Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2026-04-27T16:07:19.466Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2026-04-27T16:07:19.466Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.466Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2026-04-27T16:07:19.468Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2026-04-27T16:07:19.468Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2026-04-27T16:07:19.468Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.468Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2026-04-27T16:07:19.469Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2026-04-27T16:07:19.469Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2026-04-27T16:07:19.469Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.469Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2026-04-27T16:07:19.471Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2026-04-27T16:07:19.471Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_email.svg
+[debug] [2026-04-27T16:07:19.471Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.471Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_email.svg
+[debug] [2026-04-27T16:07:19.472Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2026-04-27T16:07:19.472Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_google.svg
+[debug] [2026-04-27T16:07:19.472Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.472Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_google.svg
+[debug] [2026-04-27T16:07:19.472Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2026-04-27T16:07:19.472Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2026-04-27T16:07:19.472Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-04-27T16:07:19.473Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2026-04-27T16:07:19.473Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2026-04-27T16:07:19.473Z] [unzip] Processing entry: client/browserconfig.xml
+[debug] [2026-04-27T16:07:19.473Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.473Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/browserconfig.xml
+[debug] [2026-04-27T16:07:19.473Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2026-04-27T16:07:19.473Z] [unzip] Processing entry: client/favicon-32x32.png
+[debug] [2026-04-27T16:07:19.473Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-04-27T16:07:19.473Z] [unzip] Writing file: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/client/favicon-32x32.png
+[debug] [2026-04-27T16:07:19.473Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T16:07:19.473Z] [unzip] Processing entry: server/
+[debug] [2026-04-27T16:07:19.473Z] [unzip] mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/server/
+[debug] [2026-04-27T16:07:19.473Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2026-04-27T16:07:19.474Z] [unzip] Processing entry: server/server.mjs.map
+[debug] [2026-04-27T16:07:19.474Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/server
+[debug] [2026-04-27T16:07:19.474Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/server/server.mjs.map
+[debug] [2026-04-27T16:07:19.476Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2026-04-27T16:07:19.476Z] [unzip] Processing entry: server/server.mjs
+[debug] [2026-04-27T16:07:19.476Z] [unzip] else mkdir: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/server
+[debug] [2026-04-27T16:07:19.476Z] [unzip] deflating: /Users/sumayayasin/.cache/firebase/emulators/ui-v1.15.0/server/server.mjs
+[info] i  functions: Watching "/Users/sumayayasin/Desktop/ClarityScan/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/sumayayasin/Desktop/ClarityScan/functions\" for Cloud Functions..."}}
+[debug] [2026-04-27T16:07:19.480Z] Customer code is not Node
+[debug] [2026-04-27T16:07:19.480Z] Validating python source
+[debug] [2026-04-27T16:07:19.480Z] Building python source
+[debug] [2026-04-27T16:07:19.481Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T16:07:19.485Z] Running command with virtualenv: command=., args=["\"/Users/sumayayasin/Desktop/ClarityScan/functions/venv/bin/activate\"","&&","python3.13","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2026-04-27T16:07:19.537Z] stdout: /Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/firebase_functions
+
+[debug] [2026-04-27T16:07:19.540Z] Running admin server with args: ["python3.13","\"/Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"clarityscan-a6ccf","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"clarityscan-a6ccf","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"clarityscan-a6ccf.firebasestorage.app\",\"projectId\":\"clarityscan-a6ccf\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/sumayayasin/.config/firebase/sumayayasin25_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/sumayayasin/Desktop/ClarityScan/functions
+[debug] [2026-04-27T16:07:19.540Z] Running command with virtualenv: command=., args=["\"/Users/sumayayasin/Desktop/ClarityScan/functions/venv/bin/activate\"","&&","python3.13","\"/Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] [2026-04-27 16:07:23,204] ERROR in app: Exception on /__/functions.yaml [GET]
+Traceback (most recent call last):
+  File "/Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/firebase_functions/private/serving.py", line 121, in get_functions_yaml
+    functions = get_functions()
+  File "/Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/firebase_functions/private/serving.py", line 41, in get_functions
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1027, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/sumayayasin/Desktop/ClarityScan/functions/main.py", line 3, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+[error] 127.0.0.1 - - [27/Apr/2026 16:07:23] "GET /__/functions.yaml HTTP/1.1" 500 -
+
+[debug] [2026-04-27T16:07:23.208Z] Got response code 500; body <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+[error] 127.0.0.1 - - [27/Apr/2026 16:07:23] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 55431 Terminated: 15          python3.13 "/Users/sumayayasin/Desktop/ClarityScan/functions/venv/lib/python3.13/site-packages/firebase_functions/private/serving.py"
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] i  functions: Watching "/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai\" for Cloud Functions..."}}
+[debug] [2026-04-27T16:07:23.223Z] Validating nodejs source
+[debug] [2026-04-27T16:07:23.847Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "24"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "busboy": "^1.6.0",
+    "cors": "^2.8.6",
+    "firebase-admin": "^13.6.0",
+    "firebase-functions": "^7.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.4.1"
+  },
+  "private": true
+}
+[debug] [2026-04-27T16:07:23.848Z] Building nodejs source
+[debug] [2026-04-27T16:07:23.848Z] Failed to find version of module node: reached end of search path /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules
+[warn] ⚠  functions: Your requested "node" version "24" doesn't match your global version "25". Using node@25 from host. 
+[debug] [2026-04-27T16:07:23.850Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T16:07:23.851Z] Found firebase-functions binary at '/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/.bin/firebase-functions'
+[info] Serving at port 8975
+
+[error] (node:55438) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[debug] [2026-04-27T16:07:29.081Z] Got response from /__/functions.yaml {"endpoints":{"predictSkin":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"predictSkin"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] ✔  functions: Loaded functions definitions from source: predictSkin. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: predictSkin."}}
+[info] ✔  functions[us-central1-predictSkin]: http function initialized (http://127.0.0.1:5001/clarityscan-a6ccf/us-central1/predictSkin). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clarityscan-a6ccf/us-central1/predictSkin)."}}
+[debug] [2026-04-27T16:07:33.147Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-04-27T16:11:45.930Z] [work-queue] {"queuedWork":["/clarityscan-a6ccf/us-central1/predictSkin-2026-04-27T16:11:45.929Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-04-27T16:11:45.931Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clarityscan-a6ccf/us-central1/predictSkin-2026-04-27T16:11:45.929Z"],"workRunningCount":1}
+[debug] [2026-04-27T16:11:45.931Z] Accepted request POST /clarityscan-a6ccf/us-central1/predictSkin --> us-central1-predictSkin
+[debug] [2026-04-27T16:11:45.933Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-04-27T16:11:45.934Z] [functions] Got req.url=/clarityscan-a6ccf/us-central1/predictSkin, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clarityscan-a6ccf/us-central1/predictSkin, mapping to path=/"}}
+[debug] [2026-04-27T16:11:45.943Z] [worker-pool] addWorker(us-central1-predictSkin) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-predictSkin)"}}
+[debug] [2026-04-27T16:11:45.944Z] [worker-pool] Adding worker with key us-central1-predictSkin, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-predictSkin, total=1"}}
+[debug] [2026-04-27T16:11:46.620Z] [runtime-status] [55750] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.8.0","resolution":"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.8.0\",\"resolution\":\"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2026-04-27T16:11:46.621Z] [runtime-status] [55750] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.2.5","resolution":"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.2.5\",\"resolution\":\"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2026-04-27T16:11:46.621Z] [runtime-status] [55750] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2026-04-27T16:11:46.622Z] [runtime-status] [55750] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.2.5","resolution":"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.2.5\",\"resolution\":\"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2026-04-27T16:11:46.622Z] [runtime-status] [55750] Detected firebase-functions v7+, skipping legacy stubs. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] Detected firebase-functions v7+, skipping legacy stubs."}}
+[debug] [2026-04-27T16:11:46.622Z] [runtime-status] [55750] Resolved module firebase-admin {"declared":true,"installed":true,"version":"13.8.0","resolution":"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"13.8.0\",\"resolution\":\"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2026-04-27T16:11:46.660Z] [runtime-status] [55750] Resolved module firebase-functions {"declared":true,"installed":true,"version":"7.2.5","resolution":"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"7.2.5\",\"resolution\":\"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2026-04-27T16:11:46.842Z] [runtime-status] [55750] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"13.8.0","resolution":"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"13.8.0\",\"resolution\":\"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2026-04-27T16:11:47.280Z] [runtime-status] [55750] Functions runtime initialized. {"cwd":"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai","node_version":"25.6.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] Functions runtime initialized. {\"cwd\":\"/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai\",\"node_version\":\"25.6.0\"}"}}
+[info] >  (node:55750) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities. {"user":"(node:55750) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:55750) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities."}}
+[info] >  (Use `node --trace-deprecation ...` to show where the warning was created) {"user":"(Use `node --trace-deprecation ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-deprecation ...` to show where the warning was created)"}}
+[debug] [2026-04-27T16:11:47.281Z] [runtime-status] [55750] Listening to port: /var/folders/2s/7cyff0c56tj476ddjdwb5wz40000gn/T/fire_emu_a65837cb4da02e7a.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[runtime-status] [55750] Listening to port: /var/folders/2s/7cyff0c56tj476ddjdwb5wz40000gn/T/fire_emu_a65837cb4da02e7a.sock"}}
+[debug] [2026-04-27T16:11:47.359Z] [worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: IDLE"}}
+[debug] [2026-04-27T16:11:47.359Z] [worker-pool] submitRequest(triggerId=us-central1-predictSkin) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-predictSkin)"}}
+[info] i  functions: Beginning execution of "us-central1-predictSkin" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Beginning execution of \"us-central1-predictSkin\""}}
+[debug] [2026-04-27T16:11:47.360Z] [worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: BUSY"}}
+[info] >  AI Error: TypeError: (0 , util_1.isNullOrUndefined) is not a function {"user":"AI Error: TypeError: (0 , util_1.isNullOrUndefined) is not a function","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m AI Error: TypeError: (0 , util_1.isNullOrUndefined) is not a function"}}
+[info] >      at createTensorsTypeOpAttr (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/nodejs_kernel_backend.js:675:38) {"user":"    at createTensorsTypeOpAttr (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/nodejs_kernel_backend.js:675:38)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at createTensorsTypeOpAttr (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/nodejs_kernel_backend.js:675:38)"}}
+[info] >      at Object.kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/kernels/Cast.js:30:65) {"user":"    at Object.kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/kernels/Cast.js:30:65)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Object.kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/kernels/Cast.js:30:65)"}}
+[info] >      at kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4707:32) {"user":"    at kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4707:32)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4707:32)"}}
+[info] >      at /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4767:27 {"user":"    at /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4767:27","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4767:27"}}
+[info] >      at Engine.scopedRun (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4572:23) {"user":"    at Engine.scopedRun (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4572:23)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Engine.scopedRun (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4572:23)"}}
+[info] >      at Engine.runKernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4763:14) {"user":"    at Engine.runKernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4763:14)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Engine.runKernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4763:14)"}}
+[info] >      at Engine.runKernel (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4636:21) {"user":"    at Engine.runKernel (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4636:21)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Engine.runKernel (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4636:21)"}}
+[info] >      at cast_ (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4084:19) {"user":"    at cast_ (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4084:19)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at cast_ (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4084:19)"}}
+[info] >      at cast__op (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4027:28) {"user":"    at cast__op (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4027:28)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at cast__op (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4027:28)"}}
+[info] >      at getGlobalTensorClass.toInt (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:33989:12) {"user":"    at getGlobalTensorClass.toInt (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:33989:12)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at getGlobalTensorClass.toInt (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:33989:12)"}}
+[debug] [2026-04-27T16:11:47.536Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-predictSkin" in 175.685583ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finished \"us-central1-predictSkin\" in 175.685583ms"}}
+[debug] [2026-04-27T16:11:47.536Z] [worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: IDLE"}}
+[debug] [2026-04-27T16:11:47.536Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-04-27T16:11:47.536Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-04-27T16:11:47.536Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-04-27T16:13:17.896Z] [work-queue] {"queuedWork":["/clarityscan-a6ccf/us-central1/predictSkin-2026-04-27T16:13:17.895Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-04-27T16:13:17.898Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clarityscan-a6ccf/us-central1/predictSkin-2026-04-27T16:13:17.895Z"],"workRunningCount":1}
+[debug] [2026-04-27T16:13:17.898Z] Accepted request POST /clarityscan-a6ccf/us-central1/predictSkin --> us-central1-predictSkin
+[debug] [2026-04-27T16:13:17.900Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-04-27T16:13:17.901Z] [functions] Got req.url=/clarityscan-a6ccf/us-central1/predictSkin, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clarityscan-a6ccf/us-central1/predictSkin, mapping to path=/"}}
+[debug] [2026-04-27T16:13:17.901Z] [worker-pool] submitRequest(triggerId=us-central1-predictSkin) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-predictSkin)"}}
+[info] i  functions: Beginning execution of "us-central1-predictSkin" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Beginning execution of \"us-central1-predictSkin\""}}
+[debug] [2026-04-27T16:13:17.903Z] [worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: BUSY"}}
+[info] >  AI Error: TypeError: (0 , util_1.isNullOrUndefined) is not a function {"user":"AI Error: TypeError: (0 , util_1.isNullOrUndefined) is not a function","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m AI Error: TypeError: (0 , util_1.isNullOrUndefined) is not a function"}}
+[info] >      at createTensorsTypeOpAttr (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/nodejs_kernel_backend.js:675:38) {"user":"    at createTensorsTypeOpAttr (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/nodejs_kernel_backend.js:675:38)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at createTensorsTypeOpAttr (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/nodejs_kernel_backend.js:675:38)"}}
+[info] >      at Object.kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/kernels/Cast.js:30:65) {"user":"    at Object.kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/kernels/Cast.js:30:65)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Object.kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/kernels/Cast.js:30:65)"}}
+[info] >      at kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4707:32) {"user":"    at kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4707:32)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4707:32)"}}
+[info] >      at /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4767:27 {"user":"    at /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4767:27","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4767:27"}}
+[info] >      at Engine.scopedRun (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4572:23) {"user":"    at Engine.scopedRun (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4572:23)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Engine.scopedRun (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4572:23)"}}
+[info] >      at Engine.runKernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4763:14) {"user":"    at Engine.runKernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4763:14)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Engine.runKernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4763:14)"}}
+[info] >      at Engine.runKernel (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4636:21) {"user":"    at Engine.runKernel (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4636:21)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Engine.runKernel (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4636:21)"}}
+[info] >      at cast_ (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4084:19) {"user":"    at cast_ (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4084:19)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at cast_ (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4084:19)"}}
+[info] >      at cast__op (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4027:28) {"user":"    at cast__op (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4027:28)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at cast__op (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4027:28)"}}
+[info] >      at getGlobalTensorClass.toInt (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:33989:12) {"user":"    at getGlobalTensorClass.toInt (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:33989:12)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at getGlobalTensorClass.toInt (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:33989:12)"}}
+[debug] [2026-04-27T16:13:17.941Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-predictSkin" in 37.767833ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finished \"us-central1-predictSkin\" in 37.767833ms"}}
+[debug] [2026-04-27T16:13:17.941Z] [worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: IDLE"}}
+[debug] [2026-04-27T16:13:17.941Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-04-27T16:13:17.941Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-04-27T16:13:17.941Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-04-27T16:19:43.277Z] [work-queue] {"queuedWork":["/clarityscan-a6ccf/us-central1/predictSkin-2026-04-27T16:19:43.275Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-04-27T16:19:43.279Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clarityscan-a6ccf/us-central1/predictSkin-2026-04-27T16:19:43.275Z"],"workRunningCount":1}
+[debug] [2026-04-27T16:19:43.279Z] Accepted request POST /clarityscan-a6ccf/us-central1/predictSkin --> us-central1-predictSkin
+[debug] [2026-04-27T16:19:43.283Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-04-27T16:19:43.285Z] [functions] Got req.url=/clarityscan-a6ccf/us-central1/predictSkin, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clarityscan-a6ccf/us-central1/predictSkin, mapping to path=/"}}
+[debug] [2026-04-27T16:19:43.285Z] [worker-pool] submitRequest(triggerId=us-central1-predictSkin) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-predictSkin)"}}
+[info] i  functions: Beginning execution of "us-central1-predictSkin" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Beginning execution of \"us-central1-predictSkin\""}}
+[debug] [2026-04-27T16:19:43.287Z] [worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: BUSY"}}
+[info] >  AI Error: TypeError: (0 , util_1.isNullOrUndefined) is not a function {"user":"AI Error: TypeError: (0 , util_1.isNullOrUndefined) is not a function","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m AI Error: TypeError: (0 , util_1.isNullOrUndefined) is not a function"}}
+[info] >      at createTensorsTypeOpAttr (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/nodejs_kernel_backend.js:675:38) {"user":"    at createTensorsTypeOpAttr (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/nodejs_kernel_backend.js:675:38)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at createTensorsTypeOpAttr (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/nodejs_kernel_backend.js:675:38)"}}
+[info] >      at Object.kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/kernels/Cast.js:30:65) {"user":"    at Object.kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/kernels/Cast.js:30:65)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Object.kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-node/dist/kernels/Cast.js:30:65)"}}
+[info] >      at kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4707:32) {"user":"    at kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4707:32)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at kernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4707:32)"}}
+[info] >      at /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4767:27 {"user":"    at /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4767:27","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4767:27"}}
+[info] >      at Engine.scopedRun (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4572:23) {"user":"    at Engine.scopedRun (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4572:23)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Engine.scopedRun (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4572:23)"}}
+[info] >      at Engine.runKernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4763:14) {"user":"    at Engine.runKernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4763:14)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Engine.runKernelFunc (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4763:14)"}}
+[info] >      at Engine.runKernel (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4636:21) {"user":"    at Engine.runKernel (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4636:21)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Engine.runKernel (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs-core/dist/tf-core.node.js:4636:21)"}}
+[info] >      at cast_ (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4084:19) {"user":"    at cast_ (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4084:19)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at cast_ (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4084:19)"}}
+[info] >      at cast__op (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4027:28) {"user":"    at cast__op (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4027:28)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at cast__op (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:4027:28)"}}
+[info] >      at getGlobalTensorClass.toInt (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:33989:12) {"user":"    at getGlobalTensorClass.toInt (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:33989:12)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"\u001b[90m> \u001b[39m     at getGlobalTensorClass.toInt (/Users/sumayayasin/Desktop/ClarityScan/clarityscan-ai/node_modules/@tensorflow/tfjs/dist/tf.node.js:33989:12)"}}
+[debug] [2026-04-27T16:19:43.392Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-predictSkin" in 105.396458ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finished \"us-central1-predictSkin\" in 105.396458ms"}}
+[debug] [2026-04-27T16:19:43.392Z] [worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"[worker-us-central1-predictSkin-1fdd003a-9f91-4323-8855-88a419748243]: IDLE"}}
+[debug] [2026-04-27T16:19:43.392Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-04-27T16:19:43.392Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-predictSkin"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-04-27T16:19:43.392Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
